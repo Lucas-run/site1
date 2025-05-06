@@ -1,0 +1,63 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.top-bar {
+  width: 100%;
+  background-color: #cc0000;
+}
+
+.container-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.social-media-top {
+  display: flex;
+  width: 20px;
+  font-size: medium;
+  gap: 10px;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
