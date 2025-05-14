@@ -7,77 +7,122 @@
     <title>Generic cursos</title>
   </head>
   <body>
+    <!-- Barra vermelha -->
     <div class="top-bar">
       <div class="container-top">
         <div class="social-media-top">
-          <a href="https://twitter.com" aria-label="Visite nosso Twitter">
-            <img src="public/x.svg" alt="Twitter" />
+          <a
+            href="https://twitter.com"
+            aria-label="Visite nosso Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="public/x.svg" alt="Twitter" class="social-icon" />
           </a>
-          <a href="https://facebook.com" aria-label="Visite nosso Facebook">
-            <img src="public/facebook.svg" alt="Facebook" />
+          <a
+            href="https://facebook.com"
+            aria-label="Visite nosso Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="public/facebook.svg" alt="Facebook" class="social-icon" />
           </a>
-          <a href="https://instagram.com" aria-label="Visite nosso Instagram">
-            <img src="public/instagram.svg" alt="Instagram" />
-          </a>
+          <a
+            href="https://instagram.com"
+            aria-label="Visite nosso Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="public/instagram.svg"
+              alt="Instagram"
+              class="social-icon"
+          /></a>
         </div>
         <div class="info-top"></div>
       </div>
     </div>
+
+    <!-- header/ barra branca -->
     <header>
       <div class="container-header">
-        <div class="logo-header"></div>
-        <div class="links-header"></div>
-      </div>
-    </header>
-    <div class="menu">
-      <ul>
-        <li>HOME</li>
-        <li>SOBRE</li>
-        <li>CURSOS</li>
-        <li>INSCRIÇÃO</li>
-        <li>FOTOS</li>
-        <li>SERVIÇOS</li>
-        <li>CONTATO</li>
-        <li>LOGIN</li>
-      </ul>
-    </div>
-    <div class="hero">
-      <div class="container-hero">
-        <div class="carousel">
-          <div class="carousel-item">
-            <img src="banner1.jpg" alt="Banner 1" />
-          </div>
-          <div class="carousel-item">
-            <img src="banner2.jpg" alt="Banner 2" />
-          </div>
-          <div class="carousel-item">
-            <img src="banner3.jpg" alt="Banner 3" />
+        <div class="logo-header">
+          <img
+            src="public/logoia.png"
+            alt="logo generic cursos"
+            class="logo-img"
+          />
+        </div>
+        <div class="links-header">
+          <div class="link-box phone">
+            <img
+              src="public/phone.svg"
+              alt="ícone do telefone"
+              class="phone-icon"
+            />
+            <a href="tel:+5511999999999" class="phone-number"
+              >+55 11 99999-9999</a
+            >
           </div>
         </div>
       </div>
+    </header>
+
+    <!-- Navbar/ barra azul -->
+    <nav>
+      <ul class="menu">
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#">SOBRE</a></li>
+        <li><a href="#">CURSOS</a></li>
+        <li><a href="#">INSCRIÇÃO</a></li>
+        <li><a href="#">FOTOS</a></li>
+        <li><a href="#">SERVIÇOS</a></li>
+        <li><a href="#">CONTATO</a></li>
+        <li><a href="#">LOGIN</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero/slider -->
+    <div class="hero">
+      <div class="slide">
+        <div class="overlay">Generic</div>
+        <div class="slider-nav">
+          <button id="prevBtn" aria-label="Anterior">←</button>
+          <button id="nextBtn" aria-label="Próximo">→</button>
+        </div>
+      </div>
     </div>
+
+    <!-- Catálogo -->
     <section class="cursos">
-      <div class="container-cursos">
-        <h2>CURSOS</h2>
+      <h2>CURSOS</h2>
+      <div class="grid-cursos">
         <div class="curso-item">
           <img src="curso1.jpg" alt="Curso 1" />
-          <h3>Curso 1</h3>
-          <p>Descrição do Curso 1</p>
-          <button>Inscreva-se</button>
+          <div class="curso-content">
+            <h3>Curso 1</h3>
+            <p>Descrição do Curso 1</p>
+            <button>Inscreva-se</button>
+          </div>
         </div>
         <div class="curso-item">
           <img src="curso2.jpg" alt="Curso 2" />
-          <h3>Curso 2</h3>
-          <p>Descrição do Curso 2</p>
-          <button>Inscreva-se</button>
+          <div class="curso-content">
+            <h3>Curso 2</h3>
+            <p>Descrição do Curso 2</p>
+            <button>Inscreva-se</button>
+          </div>
         </div>
         <div class="curso-item">
           <img src="curso3.jpg" alt="Curso 3" />
-          <h3>Curso 3</h3>
-          <p>Descrição do Curso 3</p>
-          <button>Inscreva-se</button>
+          <div class="curso-content">
+            <h3>Curso 3</h3>
+            <p>Descrição do Curso 3</p>
+            <button>Inscreva-se</button>
+          </div>
         </div>
       </div>
     </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>
