@@ -184,6 +184,27 @@ footer .footer-links a:hover {
     gap: 20px;
     padding: 10px 0;
   }
+  nav {
+    background: linear-gradient(180deg, #1f324f 0%, #223b5c 100%);
+  }
+  .menu {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 12px 0;
+  }
+  .menu li a {
+    color: #ffffffcc;
+    font-size: 0.875rem;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  .menu li a:hover,
+  .menu li a.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2px;
+  }
   .slider-nav {
     position: absolute;
     top: 50%;
@@ -194,7 +215,7 @@ footer .footer-links a:hover {
     padding: 0 20px;
   }
   .slider-nav button {
-    background: rgba(0, 0, 0, 0.5);
+    background: #00000080;
     border: none;
     color: #fff;
     width: 36px;
@@ -218,6 +239,7 @@ footer .footer-links a:hover {
   header .container-header {
     padding: 20px 10vw;
   }
+
   .link-box .phone-number {
     font-size: 1.1rem;
   }
@@ -236,6 +258,9 @@ footer .footer-links a:hover {
     grid-template-columns: repeat(3, 1fr);
   }
   footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     text-align: left;
     padding: 30px 10vw;
   }
